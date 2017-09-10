@@ -10,7 +10,9 @@ Tooltip Ultimate - CSS / Javascript HTML5 Tooltip
 
 
 
+Demo - http://digitalzoomstudio.net/css3tooltipgenerator/
 
+Readme - http://digitalzoomstudio.net/css3tooltipgenerator/readme
 
 
 tooltip, css3 tooltip, css3, javascript, html5, html5 tooltip, custom, custom colors, custom position, auto position, dark, light, title, hover, click

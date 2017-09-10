@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation Tooltip</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+
+    <link href="style.css" rel="stylesheet">
+    <style type="text/css">
+    .color-highlight {
+	color: #CC6633;
+}
+    .sidenote {
+	font-size: 14px;
+}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header" style="margin-top: 15px;">
+            <a class="navbar-brand" href="#">
+                <img src="https://lh3.googleusercontent.com/U8tW9SMhpHSy4c51Wd-fSubOquREARRHH13pzx7BND7DeUk3euYSRhYZ_8O7c3Qj05EtjZgw8VIaT28J5oFFiGiUoAMsrEtcCNTwZqH3CjoB9Vn-MOIUcCCeNleNgxH3pD9b7msC9sm-uLePMWOknL4RPdEoFa_OULsvjwqlPJXSRNpGnwpFg03Lf2Jd_296o0ZEvHlbBPK_XIFxXpfLkLaMrvchB3PwclrSUAxlh_OIbwVikJjlYVD7919WoWmAJvtZXeCoUT_8uEULKDR1Jj7CfpHMskBdCkLXXsQg_XU5KvLJTuHOdDzUqNsEhpAQjPYrkDrxqOSgrcY0WQbpIHmmFLm9njn20r9PLXkADqxrtV4Q5jEO9TFrtw9XNl8ewz7W6epzXM0_0tG90dyVQl2perW7L0SsTCCN0DgVU-Ykp6mIXXu4nKNObi4tz72nFtuQl-528wWiszqQkaEqdf9nrZwpVEm8TwGXv2eQ1fTKHkT_WhG7dSZmq0mVV5GTd5idk2FcXOE7wJ9BOV3G1eB0BIPgYndmN2egooZ5xdbvoVi_8XTv3Y_1lWSgpmBufrdG=w139-h32-no"/>
+            </a>
+        </div>
+        <a class="btn btn-custom pull-right"
+           target="_blank"
+           href="http://digitalzoomstudio.net/links/tooltip.php">
+            <span class="glyphicon glyphicon-download-alt"></span>
+            Item Page
+        </a>
+    </div>
+</nav>
+<div class="container">
+    <section class="sidebar">
+        <ul>
+            <li>Setup
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#customize">Customize</a></li>
+                    <li><a href="#developertips">Developer Tips</a></li>
+              </ul>
+          </li>
+            <li>
+      </ul>
+    </section>
+    <article>
+        <h2 id="intro">Tooltip DZS</h2>
+        <div class="row row-with-inline">
+                <div class="col-md-5 bg-for-intro" >
+                <strong>Created</strong>: 09/05/2017<br>
+                <strong>Author</strong>: Digital Zoom Studio<br>
+                <strong>Twitter</strong>: <a href="http://twitter.com/@ZoomItFlash">http://twitter.com/</a><br>
+                <strong>Facebook</strong>: <a href="facebook.com/digitalzoomstudio">http://facebook.com/dzs</a><br>
+                <strong>Support</strong> - via item comments
+            </div>
+            <div class="col-md-7">
+                Thank you for purchasing my component. If you have any questions that are beyond the scope of this help file, you can ask them in the Item Discussions.
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p><a name="installation"></a></p>
+      <h3 id="intro"><strong>Intro</strong> - <a href="#toc">top</a></h3>
+		<p><strong>DZS Tooltip</strong> is a modern, feature-rich, customizable tooltip. </p>
+		<p>Normally, dzs tooltip can work without javascript , but javascript enables some extra features, like wrapping unstructured tooltips. For example, this structure ( the simplest ) is accepted, and will be corrected by javascript </p>
+		<p>&nbsp;</p>
+	  <hr>
+
+		<h3 id="install"><strong>Installation</strong> - <a href="#toc">top</a></h3>
+
+		<p>All you have to do for installing on your site (ie. yoursite.com) is copy the contents of the <strong>/source</strong> folder to a folder (ie. <strong>yourfolder</strong>) on your site via ftp ( with filezilla ) or any other upload service. You can then access your contents via <a href="http://yoursite.com/yourfolder">http://yoursite.com/<strong>yourfolder</strong></a>.</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p> 
+
+		
+
+<hr>
+		
+		<h3 id="integrate"><strong>Integrating in your project</strong> - <a href="#toc">top</a></h3>
+		
+<p>In order to install this component in your html page you need to: </p>
+        <ol>
+        <li>  unpack the download package, open the <strong>source</strong> folder<br/><img class="install-img" src="https://i.imgur.com/L8NPXJp.jpg"/></li>
+        <li>copy the folder <strong>/dzstooltip</strong> into your project folder<br/><img class="install-img" src="https://i.imgur.com/ct1Q5XY.jpg"/></li>
+        <li>open your html file and insert this inside your <strong>&lt;head&gt;</strong> tag
+        <div class="code">
+          &lt;script&#32;src="dzstooltip/dzstooltip.js"&#32;type="text/javascript"&gt;&lt;/script&gt;<br>
+          
+          &lt;link&#32;rel='stylesheet'&#32;type="text/css"&#32;href="dzstooltip/dzstooltip.css"/&gt;        </div>
+        </li>
+	<li>insert this inside your <strong>&lt;body&gt;</strong> tag where you want the gallery to appear 
+	  <div class="code">
+	  &lt;span&#32;class="dzstooltip-con&#32;js"&gt;&lt;span&#32;class="tooltip-indicator"&gt;insert&#32;anywhere&lt;/span&gt;&lt;span&#32;class="dzstooltip&#32;&#32;talign-center&#32;arrow-bottom&#32;style-rounded&#32;color-dark-light&#32;&#32;dims-set&#32;transition-slidedown&#32;"&#32;style="width:&#32;280px;"&gt;&lt;span&#32;class="dzstooltip--inner"&gt;Lorem&#32;ipsum&#32;dolor&#32;sit&#32;amet,&#32;consectetur&#32;adipiscing&#32;elit,&#32;sed&#32;do&#32;eiusmod&#32;tempor&#32;incididunt&#32;ut&#32;labore.&lt;/span&gt;&#32;&lt;/span&gt;&lt;/span&gt;
+	  <p>&nbsp;</p></div></li>
+	<li>Customize freely using the customizations below</li>
+    <li>All done!</li>
+    </ol>
+        <p>&nbsp;</p>
+<hr>
+		
+
+<h3 id="customise"><strong>Customise It</strong> - <a href="#toc">top</a></h3>
+<h4>&nbsp;</h4>
+<h5><strong>The optional js class</strong></h5>
+<p>Normally, dzs tooltip can work without javascript , but javascript enables some extra features, like wrapping unstructured tooltips. For example, this structure ( the simplest ) is accepted, and will be corrected by javascript </p>
+<div class="code">
+  &lt;span&#32;class="dzstooltip-con&#32;js&#32;"&gt;no&#32;structure&lt;span&#32;class="dzstooltip&#32;&#32;talign-center&#32;arrow-bottom&#32;style-rounded&#32;color-dark-light&#32;&#32;dims-set&#32;transition-slidedown&#32;"&#32;style="width:&#32;280px;"&gt;no&#32;structure&lt;/span&gt;&lt;/span&gt;
+</div>
+<p>&nbsp;</p>
+<p>This is optional and represents the container of the gallery and the preloader ( recommended ) . You insert video gallery items inside this container.</p>
+<p>&nbsp;</p>
+<h5><strong>Orientation</strong></h5>
+<p>Tooltip can be displayed on top, bottom, left, or right of the text. If you want it , at the bottom, you must add the <strong>arrow-top</strong> class to the dzstooltip container. So the class describes where the arrow would be located, not the position of the tooltip relative to the tooltip indicator.</p>
+<p>&nbsp;</p>
+<div class="code">&lt;span&#32;class="dzstooltip-con&#32;<strong>js</strong>"&gt;&lt;span&#32;class="tooltip-indicator"&gt;insert&#32;anywhere&lt;/span&gt;&lt;span&#32;class="dzstooltip&#32;&#32;talign-center&#32;<strong>arrow-bottom</strong>&#32;style-rounded&#32;color-dark-light&#32;&#32;dims-set&#32;transition-slidedown&#32;"&#32;style="width:&#32;280px;"&gt;&lt;span&#32;class="dzstooltip--inner"&gt;Lorem&#32;ipsum&#32;dolor&#32;sit&#32;amet,&#32;consectetur&#32;adipiscing&#32;elit,&#32;sed&#32;do&#32;eiusmod&#32;tempor&#32;incididunt&#32;ut&#32;labore.&lt;/span&gt;&#32;&lt;/span&gt;&lt;/span&gt;</div>
+<p></p>
+<p>&nbsp;</p>
+<p>Other paramters you can add</p>
+<ul>
+  <li><em>aligment</em>
+<ul>
+  <li><strong>talign-start
+  </strong> - align tooltip at the start - top for arrow-right / arrow-left, and left for arrow-bottom / arrow-top</li>
+  
+  <li><strong>talign-center</strong> - center it</li>
+  <li><strong>talign-end </strong>- align tooltip at the end</li>
+</ul>
+  </li>
+  <li><em>transition</em>
+<ul>
+  <li><strong>transition-slidedown</strong></li>
+  
+  <li><strong>transition-scaleup</strong></li>
+  <li><strong>transition-scaledown</strong></li>
+</ul>
+  </li>
+  <li><em>color</em>
+<ul>
+  <li><strong>color-dark-light</strong></li>
+  
+  <li><strong>color-light-dark</strong></li>
+  <li><strong>color-magenta-yellow</strong></li>
+</ul>
+  </li>
+  <li><em>style</em>
+<ul>
+  <li><strong>style-default
+  </strong> - plain tooltip container</li>
+  
+  <li><strong>style-rounded</strong> - rounded edges and shadow </li>
+</ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<h5><strong>Tooltip Width</strong></h5>
+<p>You can set a fixed width in the <strong>dzstooltip</strong> class</p>
+<div class="code">&lt;span&#32;class="dzstooltip-con&#32;js"&gt;&lt;span&#32;class="tooltip-indicator"&gt;insert&#32;anywhere&lt;/span&gt;&lt;span&#32;class="dzstooltip&#32;&#32;talign-center&#32;arrow-bottom&#32;style-rounded&#32;color-dark-light&#32;&#32;dims-set&#32;transition-slidedown&#32;"&#32;style="<strong>width:&#32;280px;</strong>"&gt;&lt;span&#32;class="dzstooltip--inner"&gt;Lorem&#32;ipsum&#32;dolor&#32;sit&#32;amet,&#32;consectetur&#32;adipiscing&#32;elit,&#32;sed&#32;do&#32;eiusmod&#32;tempor&#32;incididunt&#32;ut&#32;labore.&lt;/span&gt;&#32;&lt;/span&gt;&lt;/span&gt;</div>
+<p></p>
+<p></p>
+<p>You can also let it auto device width based on content</p>
+<div class="code">&lt;span&#32;class="dzstooltip-con&#32;js"&gt;&lt;span&#32;class="tooltip-indicator"&gt;insert&#32;anywhere&lt;/span&gt;&lt;span&#32;class="dzstooltip&#32;&#32;talign-center&#32;arrow-bottom&#32;style-rounded&#32;color-dark-light&#32;&#32;dims-set&#32;transition-slidedown&#32;"&#32;style="width:&#32;auto;"&gt;&lt;span&#32;class="dzstooltip--inner width-auto no-wrap"&gt;Lorem&#32;ipsum&#32;dolor&#32;sit&#32;amet,&#32;consectetur&#32;adipiscing&#32;elit,&#32;&lt;br&gt;sed&#32;do&#32;eiusmod&#32;tempor&#32;incididunt&#32;ut&#32;labore.&lt;/span&gt;&#32;&lt;/span&gt;&lt;/span&gt;</div>
+<p></p>
+<p></p>
+<p></p>
+<p>&nbsp;</p>
+<br>
+<hr>
+
+
+<h3 id="faq"><strong>FAQ</strong> - <a href="#toc">top</a></h3>
+<h5>&nbsp;</h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h5>What's the difference between jQuery(document).ready and jQuery(window).load?</h5>
+<p>When you want to manipulate pictures - ie: you depend on their size - like a ken burns slider or scroller does, it's best to use<strong>  jQuery(window).load</strong> because that executes the code in it AFTER all the images and content has loaded. For everything else, there is <strong>jQuery(document).read</strong> -which only waits for the html to be parsed corectly &amp; all elements formed.
+<h4>&nbsp;</h4>
+<hr>
+<h3 id="tips"><strong>Developer Tips</strong> - <a href="#toc">top</a></h3>
+<h4>Recommended Programs</h4>
+<p>You can generally use any text editing software [ like<strong> notepad</strong> ] to edit content/code but this is what I recommend:</p>
+<ul>
+  <li><strong>.html / .css / .scss</strong>- PHPStorm</li>
+  <li><strong>.js</strong> - PHPStorm</li>
+</ul>
+</article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/jquery.colorbox.js"></script>
+    <script type="text/javascript">
+        $("article img").wrap(function () {
+            return "<a class='colorbox' href='"+$(this).attr('src')+"'></a>"
+        });
+
+        $("table").addClass('table');
+
+        $('a.colorbox').colorbox({width: "80%"});
+    </script>
+</div>
+</body>
+</html>
