@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Tooltip Generator DZS - Source Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <link href="./bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel='stylesheet' type="text/css" href="style/style.css"/>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>-->
+
+    <link rel='stylesheet' type="text/css" href="dzstooltip/dzstooltip.css"/>
+    <link rel='stylesheet' type="text/css" href="dzscheckbox/dzscheckbox.css"/>
+    <link rel='stylesheet' type="text/css" href="dzsselector/dzsselector.css"/>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <style>
+        .dzs-progress-bar{
+            font-family: "Open Sans", sans-sarif;
+            font-weight: 300;
+        }
+        .dzs-progress-bar.skin-prev7, .dzs-progress-bar.skin-prev8, .dzs-progress-bar.skin-prev9{
+            font-family: "Oswald", sans-sarif;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<section class="mcon-mainmenu" style="z-index: 55;">
+
+    <!--
+    -->
+    <div class="container">
+        <div class="row" style="margin-left:0; margin-right: 0;">
+            <a class="logo-con " href="index.html">
+                <div class="logo-image" style="background-image: url(img/dzsplugins.png); "></div>
+            </a>
+            <div class="main-menu-con">
+                <div class="responsive-selector">
+                    <div class="responsive-selector--bg"></div>
+                    <div class="bar--middle"></div>
+                </div>
+                <ul class="main-menu">
+                    <li class=" active"><a href="index.html">Home</a></li>
+
+                    <li class=" dzs-button style-border-outside padding-small " style="border-color: rgba(140, 139, 71, 0.3); "><span class="the-bg"></span><a href="http://digitalzoomstudio.net/links/dzsprg.php"  class="the-text"  style="color: #fff; font-size:11px; " target="_blank">Get now</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===end mainmenu
+-->
+
+
+<section class="mcon-maindemo" style="position: relative; width: 100%; overflow: hidden; height: 450px; background: linear-gradient(135deg, #cfcd5e 0%,#c7cd4b 100%);">
+
+
+
+    <div class="" style="width: 47%; height: 110%; position: absolute; top:-4%;
+right:-2%;
+; transform: rotate(3deg); overflow: hidden" >
+        <div  class="divimage" style="width: 110%; height: 100%; position: absolute;  top: -24px;
+right:0%;
+background-image: url(img/bg_text.jpg); transform: rotate(-3deg);"></div>
+
+    </div>
+
+    <div class="container" style="position:relative; height: 100%; display: flex; align-items: center; justify-content: center">
+        <div class="row" style="width: calc(100% + 30px)">
+
+
+
+            <div class="col-md-5" style="color: #444;">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h5>Always visible?</h5>
+                        <div class="dzscheckbox skin-nova">
+
+                            <input class="preview-changer" type="checkbox" id="always_visible" name="always_visible" checked/>
+                            <label for="always_visible"></label>
+                        </div>
+
+
+                        <h5>Skin</h5>
+                        <select class="preview-changer dzs-style-me skin-beige " name="style">
+                            <option value="style-default">Default</option>
+                            <option value="style-rounded" selected>Rounded</option>
+
+                        </select>
+
+
+
+                        <h5>Color scheme</h5>
+                        <select class="preview-changer dzs-style-me skin-beige " name="color">
+                            <option value="color-light-dark">Light / Dark</option>
+                            <option value="color-dark-light">Dark / Light</option>
+                            <option value="color-magenta-yellow">Magenta / Yellow</option>
+
+                        </select>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <h5>Arrow aligment</h5>
+                        <select class="preview-changer dzs-style-me skin-beige " name="arrow">
+                            <option value="arrow-top">Top</option>
+                            <option value="arrow-right">Right</option>
+                            <option value="arrow-bottom" selected>Bottom</option>
+                            <option value="arrow-left">Left</option>
+                        </select>
+
+                        <h5>Tooltip aligment</h5>
+                        <select class="preview-changer dzs-style-me skin-beige " name="talign">
+                            <option value="talign-start">Beginning</option>
+                            <option value="talign-center" selected>Center</option>
+                            <option value="talign-end">End</option>
+
+                        </select>
+
+                        <h5>Reveal transition</h5>
+                        <select class="preview-changer dzs-style-me skin-beige " name="transition">
+                            <option value="transition-slidedown">Slide down</option>
+                            <option value="transition-scaleup">Scale up</option>
+                            <option value="transition-scaledown">Scale down</option>
+
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--   active   -->
+            <div class="col-md-4" style="text-align: center">
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <span class="dzs-button dzstooltip-con" style="white-space: nowrap; padding: 15px 25px;">HOVER ME <span class="dzstooltip main-tooltip active talign-center arrow-bottom style-rounded color-light-dark  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<section class="mcon-otherdemos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+
+
+                <h6>Output:</h6>
+                <pre class=" code output-div">test</pre>
+                <br>
+                <h6>Scripts needed:</h6>
+                <pre class="code">&#x3C;link rel=&#x27;stylesheet&#x27; type=&#x22;text/css&#x22; href=&#x22;dzstooltip/dzstooltip.css&#x22;/&#x3E;<br>&#x3C;script src=&#x22;dzstooltip/dzstooltip.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mcon-otherdemos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Sed ut perspiciatis  <span class="dzstooltip-con js ">structure<span class="dzstooltip  talign-start arrow-bottom style-rounded color-dark-light  dims-set transition-slidedown " style="width: 180px;">works with only css</span></span> unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <span class="dzstooltip-con js"><span class="tooltip-indicator">insert anywhere</span><span class="dzstooltip  talign-center arrow-bottom style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span>, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <div class="col-md-6">
+                <p>At vero eos et accusamus et <span class="dzstooltip-con js"><span class="tooltip-indicator">transition scaledown</span><span class="dzstooltip  talign-center arrow-bottom style-rounded color-dark-light  dims-set transition-scaledown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span> iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias  excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <span class="dzstooltip-con js"><span class="tooltip-indicator">transition slidedown</span><span class="dzstooltip  talign-center arrow-top style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span> rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis <span class="dzstooltip-con js"><span class="tooltip-indicator">transition-scaleup</span><span class="dzstooltip  talign-center arrow-bottom style-rounded color-dark-light  dims-set transition-scaleup " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span> repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+<section class="mcon-otherdemos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et <span class="dzstooltip-con js"><span class="tooltip-indicator">insert anywhere</span><span class="dzstooltip active talign-center arrow-bottom style-rounded color-dark-light  dims-set transition-slidedown " style=""><span class="dzstooltip--inner no-wrap width-auto">arrow top, auto width</span> </span></span> quasi architecto beatae vitae dicta sunt explicabo. Nemo enim  voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, , adipisci velit, sed quia non numquam eius <span class="dzstooltip-con js "><span class="tooltip-indicator">insert anywhere</span><span class=" dzstooltip active talign-center arrow-left style-rounded color-dark-light  dims-set transition-slidedown " style="width: 200px"><span class="dzstooltip--inner text-align-center">arrow left, auto width</span> </span></span> modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid <span class="dzstooltip-con js "><span class="tooltip-indicator">insert anywhere</span><span class=" dzstooltip active talign-center arrow-top style-rounded color-magenta-yellow  dims-set transition-slidedown " style="width: 200px"><span class="dzstooltip--inner text-align-center">any colors, arrow top, any text length will go in here limited by custom dimension</span> </span></span>  ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <div class="col-md-6">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <span class="dzstooltip-con js"><span class="tooltip-indicator">image support, arrow top</span><span class="dzstooltip    talign-center arrow-bottom style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner"><span class="divimage height1xwidth fullwidth" style="background-image:url(img/t1.jpg); "></span></span> </span></span> rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+
+                <p><span style="display: inline-block; vertical-align: middle">can be launched from anywhere:&nbsp;&nbsp; </span>
+
+                <span  style="display: inline-block; vertical-align: middle" class="dzstooltip-con js"><span class="tooltip-indicator"><span  class="divimage height1xwidth fullwidth" style="background-image:url(img/t1.jpg); width: 100px; border: 5px solid #dadada; border-radius: 5px; "></span> </span><span class="dzstooltip    talign-center arrow-top style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">tooltip can be launched from anywhere</span> </span></span>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+<section class="mcon-otherdemos" style="">
+    <div class="container" style="max-width: none; width: 100%;">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Fullwidth section</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <strong><span class="dzstooltip-con js"><span class="tooltip-indicator">this will align to the left </span><span class="dzstooltip talign-center arrow-right style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span> only if there is enough space</strong>, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+            <div class="col-md-6">
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum <strong><span class="dzstooltip-con js"><span class="tooltip-indicator">tooltip works without javascript, but if javascript is enabled,</span><span class="dzstooltip talign-center arrow-left style-rounded color-dark-light  dims-set transition-slidedown " style="width: 280px;"><span class="dzstooltip--inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span> </span></span> then it will calculate if there is enough space </strong>rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+<section class="mcon-features">
+
+    <div class="pat-bg">
+        <div class="pat-bg-inner">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bigfeature"><i class="fa fa-thumbs-up"></i></div>
+                <h4>Easy Install</h4>
+                <p style="text-align: center">Install DZS Zoom Progress Bars in just a couple of minutes. <a href="http://digitalzoomstudio.net/docs/dzsprogressbars/" target="_blank">Docs</a> are also there.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="bigfeature"><i class="fa fa-desktop"></i></div>
+                <h4>Responsive</h4>
+                <p style="text-align: center">From mobile to HD, DZS Zoom Progress Bars are ultra responsive. Also has retina graphics.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="bigfeature"><i class="fa fa-pencil"></i></div>
+                <h4>Customizable</h4>
+                <p style="text-align: center">Customize DZS Zoom Progress Bars with the many options included.</p>
+            </div>
+            <div class="col-md-3">
+                <div class="bigfeature"><i class="fa fa-briefcase"></i></div>
+                <h4>SEO Friendly</h4>
+                <p style="text-align: center">Built with SEO in mind, Zoom Progress Bars parses html content into working magic.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="mcon-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                &copy; copyright <a href="http://bit.ly/nM4R6u">ZoomIt</a> 2017
+
+            </div>
+            <div class="col-md-6" style="text-align: right">
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fdigitalzoomstudio&amp;width=150&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false&amp;appId=569360426428348" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--
+
+<div class="vplayer-tobe auto-init skin_noskin pattern-video " data-videoTitle="Test MP4" data-img="img/2.jpg" data-src="https://media.giphy.com/media/3o7btU3pCp3ggvDEOc/giphy.mp4" data-loop="on"  data-options='{
+                autoplay:"on"
+                ,loop:"on"
+                ,autoplay_on_mobile_too_with_video_muted:"on"
+                ,playfrom: 0
+                }' >
+
+                    </div>
+
+<link rel='stylesheet' type="text/css" href="videogallery/vplayer.css"/>
+<script src="videogallery/vplayer.js" type="text/javascript"></script>
+
+
+
+
+-->
+
+<link rel='stylesheet' type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="dzstooltip/dzstooltip.js" type="text/javascript"></script>
+<script src="dzsselector/dzsselector.js" type="text/javascript"></script>
+
+
+</body>
+</html>
