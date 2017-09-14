@@ -1,4 +1,15 @@
 
+
+/*!
+ * DZS Tooltip
+ * CSS3 tooltip
+ * http://digitalzoomstudio.net
+ * Free License for personal use
+ * For commercial use, it requires special licence - get in touch with developer https://codecanyon.net/user/zoomit
+ * by DigitalZoomStudio
+ */
+
+
 var dzstlt_arr_tooltips = [];
 
 (function($) {
